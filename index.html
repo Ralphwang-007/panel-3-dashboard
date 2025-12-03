@@ -1,193 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Housing Dashboard – Three Panels</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Housing Dashboard – Three Panels</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #fafafa;
-        }
-        header {
-            background: #1a1a1a;
-            color: white;
-            padding: 20px;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        section {
-            padding: 40px;
-            border-bottom: 1px solid #ddd;
-        }
-        h2 {
-            margin-top: 0;
-        }
-
-        .embed-wrapper {
-            margin-top: 20px;
-        }
-
-        .panel-container {
-            max-width: 1200px;
-            margin: auto;
-        }
-    </style>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+    }
+    header {
+      background: #1a1a1a;
+      color: white;
+      padding: 20px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .subheader {
+      font-size: 13px;
+      font-weight: normal;
+      margin-top: 4px;
+      opacity: 0.85;
+    }
+    nav {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    nav a {
+      color: #e5e5e5;
+      text-decoration: none;
+      margin-right: 16px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .panel-container {
+      max-width: 1200px;
+      margin: 24px auto;
+      padding: 0 16px 40px;
+    }
+    section {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.05);
+    }
+    section h2 {
+      margin-top: 0;
+      margin-bottom: 4px;
+      font-size: 20px;
+    }
+    section p {
+      margin-top: 0;
+      margin-bottom: 16px;
+      color: #4b5563;
+      font-size: 14px;
+    }
+    .embed-wrapper {
+      overflow: hidden;
+    }
+    /* Panel 3 iframe */
+    .panel3-frame {
+      width: 100%;
+      height: 900px;  /* adjust if you need more/less height */
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.05);
+    }
+  </style>
 </head>
 
 <body>
-
-<header>
-    Housing Policy Dashboard – Combined Panels
-</header>
-
-<div class="panel-container">
-
-<!-- ========================================================= -->
-<!-- ======================= PANEL 1 ========================== -->
-<!-- ========================================================= -->
-
-<section id="panel1">
-    <h2>Panel 1 – Housing Market Overview</h2>
-    <p>Interactive Tableau dashboard showing housing need and affordability across cities.</p>
-
-    <div class="embed-wrapper">
-        <div class='tableauPlaceholder' id='vizPanel1' style='position: relative'>
-            <noscript>
-                <a href='#'>
-                    <img alt='Panel 1'
-                         src='https://public.tableau.com/static/images/31/313panel1111/1_1/1_rss.png'
-                         style='border: none' />
-                </a>
-            </noscript>
-
-            <object class='tableauViz' style='display:none;'>
-                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                <param name='embed_code_version' value='3' />
-                <param name='site_root' value='' />
-                <param name='name' value='313panel1111/1_1' />
-                <param name='tabs' value='no' />
-                <param name='toolbar' value='yes' />
-                <param name='static_image'
-                       value='https://public.tableau.com/static/images/31/313panel1111/1_1/1.png' />
-                <param name='animate_transition' value='yes' />
-                <param name='display_static_image' value='yes' />
-                <param name='display_spinner' value='yes' />
-                <param name='display_overlay' value='yes' />
-                <param name='display_count' value='yes' />
-                <param name='language' value='en-US' />
-            </object>
-        </div>
+  <header>
+    Housing Dashboard – Three Panels
+    <div class="subheader">
+      Panel 1 &amp; Panel 2 from Tableau; Panel 3 is the custom HTML policy sandbox.
     </div>
-</section>
+    <nav>
+      <a href="#panel1">Panel 1</a>
+      <a href="#panel2">Panel 2</a>
+      <a href="#panel3">Panel 3</a>
+    </nav>
+  </header>
 
+  <div class="panel-container">
 
+    <!-- ===================== PANEL 1 ====================== -->
+    <section id="panel1">
+      <h2>Panel 1 – Housing Market Overview</h2>
+      <p>Tableau dashboard summarizing housing need and standards across cities.</p>
 
-<!-- ========================================================= -->
-<!-- ======================= PANEL 2 ========================== -->
-<!-- ========================================================= -->
-
-<section id="panel2">
-    <h2>Panel 2 – Demographic & Migration Trends</h2>
-    <p>Second Tableau dashboard exploring population shifts and migration patterns.</p>
-
-    <div class="embed-wrapper">
-        <div class='tableauPlaceholder' id='vizPanel2' style='position: relative'>
-            <noscript>
-                <a href='#'>
-                    <img alt='Panel 2'
-                         src='https://public.tableau.com/static/images/pa/panel2_17647060755000/dashboard/1_rss.png'
-                         style='border:none' />
-                </a>
-            </noscript>
-
-            <object class='tableauViz' style='display:none;'>
-                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                <param name='embed_code_version' value='3' />
-                <param name='site_root' value='' />
-                <param name='name' value='panel2_17647060755000/dashboard' />
-                <param name='tabs' value='no' />
-                <param name='toolbar' value='yes' />
-                <param name='static_image'
-                       value='https://public.tableau.com/static/images/pa/panel2_17647060755000/dashboard/1.png' />
-                <param name='animate_transition' value='yes' />
-                <param name='display_static_image' value='yes' />
-                <param name='display_spinner' value='yes' />
-                <param name='display_overlay' value='yes' />
-                <param name='display_count' value='yes' />
-                <param name='language' value='en-US' />
-            </object>
+      <div class="embed-wrapper">
+        <!-- Panel 1 embed -->
+        <div class='tableauPlaceholder' id='viz1764732406071' style='position: relative'>
+          <noscript>
+            <a href='#'>
+              <img alt='仪表板 1 '
+                   src='https://public.tableau.com/static/images/31/313panel1111/1_1/1_rss.png'
+                   style='border: none' />
+            </a>
+          </noscript>
+          <object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='313panel1111/1_1' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image'
+                   value='https://public.tableau.com/static/images/31/313panel1111/1_1/1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+          </object>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
+    <!-- ===================== PANEL 2 ====================== -->
+    <section id="panel2">
+      <h2>Panel 2 – Demographic &amp; Context</h2>
+      <p>Tableau dashboard focusing on additional context for housing and population.</p>
 
+      <div class="embed-wrapper">
+        <!-- Panel 2 embed -->
+        <div class='tableauPlaceholder' id='viz1764732445952' style='position: relative'>
+          <noscript>
+            <a href='#'>
+              <img alt='dashboard '
+                   src='https://public.tableau.com/static/images/pa/panel2_17647060755000/dashboard/1_rss.png'
+                   style='border: none' />
+            </a>
+          </noscript>
+          <object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='panel2_17647060755000/dashboard' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image'
+                   value='https://public.tableau.com/static/images/pa/panel2_17647060755000/dashboard/1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+          </object>
+        </div>
+      </div>
+    </section>
 
+    <!-- ===================== PANEL 3 ====================== -->
+    <section id="panel3">
+      <h2>Panel 3 – Mayor’s Policy Sandbox</h2>
+      <p>Interactive HTML simulator where users apply policy tools and see impacts on city health, budget, and housing stress.</p>
 
-<!-- ========================================================= -->
-<!-- ======================= PANEL 3 ========================== -->
-<!-- ========================================================= -->
+      <!-- We load your existing simulator file panel3.html -->
+      <iframe class="panel3-frame" src="panel3.html" title="Mayor's Policy Sandbox"></iframe>
+    </section>
 
-<section id="panel3">
-    <h2>Panel 3 – Mayor’s Policy Simulator</h2>
-    <p>An interactive HTML tool where users apply policy actions and observe real-time impact on affordability, environment, and public approval.</p>
+  </div>
 
-    <!-- Your full panel 3 code from index.html goes here -->
-    <!-- (I am not rewriting it here because your uploaded file is very long) -->
-    <!-- Paste EVERYTHING from your original panel-3 HTML file below this comment -->
-    
-    <!-- 🔥 IMPORTANT: Paste your full Panel 3 code RIGHT HERE -->
-    
-</section>
+  <!-- Tableau JS loader (they are referenced in your embed snippets) -->
+  <script type='text/javascript'>
+    // This replicates the sizing behaviour from the Tableau snippets
 
-</div> <!-- end .panel-container -->
+    // Panel 1
+    (function() {
+      var divElement = document.getElementById('viz1764732406071');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      if (divElement.offsetWidth > 800) {
+        vizElement.style.width='1000px'; vizElement.style.height='827px';
+      } else if (divElement.offsetWidth > 500) {
+        vizElement.style.width='1000px'; vizElement.style.height='827px';
+      } else {
+        vizElement.style.width='100%'; vizElement.style.height='1277px';
+      }
+    })();
 
+    // Panel 2
+    (function() {
+      var divElement = document.getElementById('viz1764732445952');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      if (divElement.offsetWidth > 800) {
+        vizElement.style.width='1000px'; vizElement.style.height='827px';
+      } else if (divElement.offsetWidth > 500) {
+        vizElement.style.width='1000px'; vizElement.style.height='827px';
+      } else {
+        vizElement.style.width='100%'; vizElement.style.height='1427px';
+      }
+    })();
 
-
-
-<!-- ========================================================= -->
-<!-- ==================== TABLEAU JS LOADER ================== -->
-<!-- ========================================================= -->
-
-<script src="https://public.tableau.com/javascripts/api/viz_v1.js"></script>
-
-<script>
-// PANEL 1 RESIZING
-(function() {
-    var divElement = document.getElementById('vizPanel1');
-    var vizElement = divElement.getElementsByTagName('object')[0];
-
-    if (divElement.offsetWidth > 800) {
-        vizElement.style.width = '1000px';
-        vizElement.style.height = '827px';
-    } else if (divElement.offsetWidth > 500) {
-        vizElement.style.width = '1000px';
-        vizElement.style.height = '827px';
-    } else {
-        vizElement.style.width = '100%';
-        vizElement.style.height = '1277px';
-    }
-})();
-
-// PANEL 2 RESIZING
-(function() {
-    var divElement = document.getElementById('vizPanel2');
-    var vizElement = divElement.getElementsByTagName('object')[0];
-
-    if (divElement.offsetWidth > 800) {
-        vizElement.style.width = '1000px';
-        vizElement.style.height = '827px';
-    } else if (divElement.offsetWidth > 500) {
-        vizElement.style.width = '1000px';
-        vizElement.style.height = '827px';
-    } else {
-        vizElement.style.width = '100%';
-        vizElement.style.height = '1427px';
-    }
-})();
-</script>
+    // Load Tableau API once
+    (function() {
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      document.body.appendChild(scriptElement);
+    })();
+  </script>
 
 </body>
 </html>
